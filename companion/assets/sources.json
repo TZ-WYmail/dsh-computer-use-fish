@@ -1,0 +1,199 @@
+{
+  "upstream": "https://github.com/PC2005-cloud/dsh-pet",
+  "commit": "dfc03961bdb4d26898838cb72c9c2ac09699b1e2",
+  "role_license": "CC BY-NC-SA 4.0 per upstream README; noncommercial; retain attribution",
+  "conversion": "VP9 alpha decoded with libvpx-vp9, 640x360, 10fps, GIF alpha palette",
+  "files": [
+    {
+      "file": "idle.gif",
+      "source": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/dfc03961bdb4d26898838cb72c9c2ac09699b1e2/dsh-pet/assets/webm/%E5%BE%85%E6%9C%BA%E5%91%BC%E5%90%B8%E4%BC%91%E9%97%B2.webm",
+      "source_sha256": "deb965d05a85dacf5ff4a20faa757846f0d11679598c3ec578a5571487660395",
+      "sha256": "0cdfd3e09421e228e921ce665cd16c379db781166eb89dabad6b69c82b7bc507"
+    },
+    {
+      "file": "rice.gif",
+      "source": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/dfc03961bdb4d26898838cb72c9c2ac09699b1e2/dsh-pet/assets/webm/%E5%90%83%E7%99%BD%E9%A5%AD.webm",
+      "source_sha256": "b620413d6fa303a0ed9168dc71453c3bddc10141a0b7edeff87dc2e6e054d502",
+      "sha256": "d95ee555b708a04501030e9ede9af27596df2c65abc3ca1853b22f3e00ae2685"
+    },
+    {
+      "file": "look.gif",
+      "source": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/dfc03961bdb4d26898838cb72c9c2ac09699b1e2/dsh-pet/assets/webm/%E4%B8%9C%E5%BC%A0%E8%A5%BF%E6%9C%9B.webm",
+      "source_sha256": "a20ed02ccc5e72075a3ca83fabb57d9aac5ded699f52d00ec6de72069799fcd5",
+      "sha256": "02ddb30ef5303cb09bdd7391a3464c99f9b1645d923e3983318860e2bb7266aa"
+    },
+    {
+      "file": "think.gif",
+      "source": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/dfc03961bdb4d26898838cb72c9c2ac09699b1e2/dsh-pet/assets/webm/%E5%B7%A5%E4%BD%9C%E7%8A%B6%E6%80%81-%E6%80%9D%E8%80%83%E5%86%92%E6%B3%A1.webm",
+      "source_sha256": "b4a36cfa28ea5d7089e362a01972c6e880297c6dcd0d39f1994efd889a3c1be5",
+      "sha256": "106d49c77c5aa11ca96899d5902453a76777f903746ee3b8fe4690839e43dab3"
+    },
+    {
+      "file": "work.gif",
+      "source": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/dfc03961bdb4d26898838cb72c9c2ac09699b1e2/dsh-pet/assets/webm/%E5%B7%A5%E4%BD%9C%E7%8A%B6%E6%80%81-%E5%BF%99%E7%A2%8C%E7%82%B9%E6%8C%89.webm",
+      "source_sha256": "b5d702e0c04adb7b255ac702001c24da36c8bf95efc891f693f4976986ab2435",
+      "sha256": "387cd1edc8f62681c8e97d7f7240cb4c5930f15466cb3f36c4455ab24fa73a91"
+    },
+    {
+      "file": "organize.gif",
+      "source": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/dfc03961bdb4d26898838cb72c9c2ac09699b1e2/dsh-pet/assets/webm/%E5%B7%A5%E4%BD%9C%E7%8A%B6%E6%80%81-%E6%B8%85%E7%82%B9%E5%BD%92%E6%A1%A3.webm",
+      "source_sha256": "8c84f58f3a9e7b912e1cbfd89f77eb3652053fc9b2844295c8440cb636305d3b",
+      "sha256": "4fd4d5facf8fdb3e6dad0903f0024d6071dc9195ccbaffd649017570763be05e"
+    },
+    {
+      "file": "celebrate.gif",
+      "source": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/dfc03961bdb4d26898838cb72c9c2ac09699b1e2/dsh-pet/assets/webm/%E5%B7%A5%E4%BD%9C%E7%8A%B6%E6%80%81-%E9%9B%80%E8%B7%83%E5%BA%86%E7%A5%9D.webm",
+      "source_sha256": "3ff681051a0bb4f152d7535d64b7f3194c30298bf56d41e521216a278f135d3e",
+      "sha256": "0a4f1bdadac43c2f80244099439a6019766b55c43d4a6cdfbe13d9743ae95567"
+    },
+    {
+      "file": "wait.gif",
+      "source": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/dfc03961bdb4d26898838cb72c9c2ac09699b1e2/dsh-pet/assets/webm/%E5%B7%A5%E4%BD%9C%E7%8A%B6%E6%80%81-%E5%8E%9F%E5%9C%B0%E8%B8%B1%E6%AD%A5%E5%BC%A0%E6%9C%9B.webm",
+      "source_sha256": "a56c17ef901fa531324a46a04def2381f65922d319ec83dadde34d2a4669e411",
+      "sha256": "d4adcb57e61923f6e56e0cff5d095201ed9f1b05d4f7d538af9b55752c08b100"
+    },
+    {
+      "file": "error.gif",
+      "source": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/dfc03961bdb4d26898838cb72c9c2ac09699b1e2/dsh-pet/assets/webm/%E5%B7%A5%E4%BD%9C%E7%8A%B6%E6%80%81-%E5%9E%82%E5%A4%B4%E5%8F%B9%E6%B0%94%E5%86%92%E6%B1%97.webm",
+      "source_sha256": "ab00c844e62221905574b4c070e0d7b6fa14fb2afa1064c27a160f10e25f7196",
+      "sha256": "db607db7f47af29b1a4cd59beb441d839d9967f82008e6ffc2fb819f6f5f0d7d"
+    },
+    {
+      "file": "drag.gif",
+      "source": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/dfc03961bdb4d26898838cb72c9c2ac09699b1e2/dsh-pet/assets/webm/%E8%A2%AB%E9%BC%A0%E6%A0%87%E6%8B%96%E6%8B%BD%E6%82%AC%E7%A9%BA%E5%8F%8D%E9%A6%88.webm",
+      "source_sha256": "31373a86026636eecc890db763760309360310eb095cf5575b13c9ca2a6cc80e",
+      "sha256": "1c94cf542630ef6ded9b442ceb551e31d463f7e01d96e47ef70d6f556f9e5411"
+    },
+    {
+      "file": "happy.gif",
+      "source": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/dfc03961bdb4d26898838cb72c9c2ac09699b1e2/dsh-pet/assets/webm/%E7%82%B9%E5%87%BB%E5%9B%9E%E5%BA%94-%E5%BC%80%E5%BF%83%E8%B7%83%E5%8A%A8.webm",
+      "source_sha256": "86dcb0c3dd7b651de9c107e927d57a5c4224599101706dbdcc782fa48bcd0ad7",
+      "sha256": "9a297c112bca965ef8a6d4cc5ef846879297e92038eb6d5fa4ee6ef743211f55"
+    },
+    {
+      "file": "pout.gif",
+      "source": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/dfc03961bdb4d26898838cb72c9c2ac09699b1e2/dsh-pet/assets/webm/%E7%82%B9%E5%87%BB%E5%9B%9E%E5%BA%94-%E5%82%B2%E5%A8%87%E7%94%9F%E6%B0%94.webm",
+      "source_sha256": "6b7176b98408cb649d1d37b6a6222a21aa6b128187e3e0b2d18550d35ab81064",
+      "sha256": "8b46a7a2f84030c0dc45103de49093caa4986cb2d63c58e5196225b7965a116b"
+    },
+    {
+      "file": "bow.gif",
+      "source": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/dfc03961bdb4d26898838cb72c9c2ac09699b1e2/dsh-pet/assets/webm/%E5%A5%B3%E4%BB%86%E5%B1%88%E8%86%9D%E7%A4%BC%E4%BB%AA.webm",
+      "source_sha256": "6536fb519ba73bbc338d30cf7286b14ffde1278b6d469c64573536dc0f896918",
+      "sha256": "50d8eae1c30c2dbb2dcbb59f2069f3600643ea93e4c9360e34cc0d048073a3b1"
+    },
+    {
+      "file": "ponder.gif",
+      "source": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/dfc03961bdb4d26898838cb72c9c2ac09699b1e2/dsh-pet/assets/webm/%E6%B7%B1%E5%BA%A6%E6%80%9D%E8%80%83%E7%A2%8E%E7%A2%8E%E5%BF%B5.webm",
+      "source_sha256": "db66867cd1f5bf68b0638fe1f966d0fdf95d1573523e60c77aa8913706118e82",
+      "sha256": "5e39d25a12c04e1ffcc34294613dd4743ce4b9014940f13c4c43442b3ba96c0c"
+    },
+    {
+      "file": "stretch.gif",
+      "source": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/dfc03961bdb4d26898838cb72c9c2ac09699b1e2/dsh-pet/assets/webm/%E8%B6%85%E5%A4%A7%E4%BC%B8%E6%87%92%E8%85%B0.webm",
+      "source_sha256": "0ac66d918cc5efd49be1273c3830de73eae5f9bdcd5fcb968d1b2f9b487705ad",
+      "sha256": "f25364d5752b38b43910ec1ec17da2cd5bbb048f5d203f4b988c014ca8e92404"
+    },
+    {
+      "file": "run.gif",
+      "source": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/dfc03961bdb4d26898838cb72c9c2ac09699b1e2/dsh-pet/assets/webm/%E5%8E%9F%E5%9C%B0%E5%B7%A6%E8%BD%AC%E5%A5%94%E8%B7%91.webm",
+      "source_sha256": "79882aedd7b77caaacce1a34dece68e2f001a3dbfa5f9d049c1ce2fc04518d52",
+      "sha256": "615e0a116300b0e476d6bd9d6ad5f9eb5835305d69d9434266cdfccffd15c86a",
+      "conversion": "640x360 12fps alpha GIF"
+    },
+    {
+      "file": "tap.gif",
+      "source": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/dfc03961bdb4d26898838cb72c9c2ac09699b1e2/dsh-pet/assets/webm/%E5%8E%9F%E5%9C%B0%E6%95%B2%E5%87%BB%E6%A1%8C%E9%9D%A2%E4%BA%92%E5%8A%A8.webm",
+      "source_sha256": "a40f481e89abcc726c89f30b01d085ca8c17a090e71facdd5e7f747e771093eb",
+      "sha256": "0fd8498d312c38c3c9e7013b832eb79acc9f83af8e4d6f3ed8e5418da7d78a19",
+      "conversion": "640x360 12fps alpha GIF"
+    },
+    {
+      "file": "wave.gif",
+      "source": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/dfc03961bdb4d26898838cb72c9c2ac09699b1e2/dsh-pet/assets/webm/%E7%82%B9%E5%87%BB%E5%9B%9E%E5%BA%94-%E5%85%83%E6%B0%94%E6%8C%A5%E6%89%8B.webm",
+      "source_sha256": "48cd729ccdcf746369942ea954d242e9afdd5643e1dac3827fa5e67450eb8776",
+      "sha256": "df0a097c0807cadce0e775f0af459d72dd93ea5dab628b342ec1d78b6326dc0c",
+      "conversion": "640x360 12fps alpha GIF"
+    },
+    {
+      "file": "tap-ready.png",
+      "source": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/dfc03961bdb4d26898838cb72c9c2ac09699b1e2/dsh-pet/assets/webm/%E5%8E%9F%E5%9C%B0%E6%95%B2%E5%87%BB%E6%A1%8C%E9%9D%A2%E4%BA%92%E5%8A%A8.webm",
+      "source_sha256": "a40f481e89abcc726c89f30b01d085ca8c17a090e71facdd5e7f747e771093eb",
+      "derived_from": "tap.gif",
+      "sha256": "b18f04b6b7c9295e39e2ec9faffcac91cd042a1476b068ff888bff597194d2b7",
+      "conversion": "Original full-character transparent pose at 1.5s; no detached parts"
+    },
+    {
+      "file": "tap-contact.png",
+      "source": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/dfc03961bdb4d26898838cb72c9c2ac09699b1e2/dsh-pet/assets/webm/%E5%8E%9F%E5%9C%B0%E6%95%B2%E5%87%BB%E6%A1%8C%E9%9D%A2%E4%BA%92%E5%8A%A8.webm",
+      "source_sha256": "a40f481e89abcc726c89f30b01d085ca8c17a090e71facdd5e7f747e771093eb",
+      "derived_from": "tap.gif",
+      "sha256": "cba584121782959a13c24da41305e02b27a687db7f14e8334c41c526aa89c53c",
+      "conversion": "Original full-character transparent pose at 2.5s; no detached parts"
+    },
+    {
+      "file": "tap-recover.png",
+      "source": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/dfc03961bdb4d26898838cb72c9c2ac09699b1e2/dsh-pet/assets/webm/%E5%8E%9F%E5%9C%B0%E6%95%B2%E5%87%BB%E6%A1%8C%E9%9D%A2%E4%BA%92%E5%8A%A8.webm",
+      "source_sha256": "a40f481e89abcc726c89f30b01d085ca8c17a090e71facdd5e7f747e771093eb",
+      "derived_from": "tap.gif",
+      "sha256": "8fda0fc37cba34787d48d1e99163f3fa596486a7e1bf77ed5b8ffdfcb661dce7",
+      "conversion": "Original full-character transparent pose at 0.8s; no detached parts"
+    },
+    {
+      "file": "spin.gif",
+      "source": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/dfc03961bdb4d26898838cb72c9c2ac09699b1e2/dsh-pet/assets/webm/%E5%B0%8F%E5%B9%85%E5%BA%A6%E5%8E%9F%E5%9C%B0360%E5%BA%A6%E6%97%8B%E8%BD%AC%E5%B1%95%E7%A4%BA.webm",
+      "source_sha256": "9f1a927f63c73e3c35ee5f4d2eb58f4a46ac7eca2af69388f320d10cdef8d29c",
+      "sha256": "c4e54b555d08f189f68e5b6b2d97531250c2b6bc17f7cd62bc3afcf32baeaaf5",
+      "conversion": "VP9 alpha to 640x360 12fps GIF"
+    },
+    {
+      "file": "code.gif",
+      "source": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/dfc03961bdb4d26898838cb72c9c2ac09699b1e2/dsh-pet/assets/webm/%E5%86%99%E4%BB%A3%E7%A0%81.webm",
+      "source_sha256": "0441287737cdbb993ce90dfa74c67ea4ea3549d8c8ea98946604668464589ed7",
+      "sha256": "be0f42828b29a05e2bff02dc247b1de298f2059e61b9bda1fb23cf6165b60e6a",
+      "conversion": "VP9 alpha to 640x360 12fps GIF"
+    },
+    {
+      "file": "record.gif",
+      "source": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/dfc03961bdb4d26898838cb72c9c2ac09699b1e2/dsh-pet/assets/webm/%E8%BD%BB%E5%BF%AB%E8%AE%B0%E5%BD%95.webm",
+      "source_sha256": "1da04162fed5cd52bd4a6a6027a6902f50bda0969d34465bc2d332cf3679bbd5",
+      "sha256": "cc1f683c72a29a3c296a7a2a5a6a3ca3523acd259771f5e1f0c64bf487633967",
+      "conversion": "VP9 alpha to 640x360 12fps GIF"
+    },
+    {
+      "file": "sleep.gif",
+      "source": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/dfc03961bdb4d26898838cb72c9c2ac09699b1e2/dsh-pet/assets/webm/%E5%8E%9F%E5%9C%B0%E5%B0%8F%E6%86%A9%E6%B2%89%E7%9C%A0.webm",
+      "source_sha256": "31d4a6b36a29b2a4fe097384173d3bbeb3fa2f40f526b13191791456bf7507a1",
+      "sha256": "62d9b38c56feeae34f40fe658ad0d4beb64df25bd931f11a4bfa58a469c11c5a",
+      "conversion": "VP9 alpha to 640x360 12fps GIF"
+    },
+    {
+      "file": "yawn.gif",
+      "source": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/dfc03961bdb4d26898838cb72c9c2ac09699b1e2/dsh-pet/assets/webm/%E5%93%88%E6%AC%A0%E8%BF%9E%E5%A4%A9.webm",
+      "source_sha256": "2b23372e1ff2bc2f9078c09740708c960d4ea021f9fc3cca294d9df11e393ec8",
+      "sha256": "e11f1a4cd544c1be5f67d242839fbf6b500d2bbc23e01f1613c5dfbb32d0fc9c",
+      "conversion": "VP9 alpha to 640x360 12fps GIF"
+    },
+    {
+      "file": "tail.gif",
+      "source": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/dfc03961bdb4d26898838cb72c9c2ac09699b1e2/dsh-pet/assets/webm/%E7%94%A8%E9%B2%B8%E9%B1%BC%E5%B0%BE%E5%B7%B4%E6%8B%8D%E6%89%93%E5%9C%B0%E9%9D%A2.webm",
+      "source_sha256": "e3f92df2cf182fdcb109ad0a865689d66e0a0d10db14c1528e5b3cb2f0bf090d",
+      "sha256": "e148b003ab60a77e16f1651bc6ac0fac0c93abd8ee98eecce437f29587697113",
+      "conversion": "VP9 alpha to 640x360 12fps GIF"
+    },
+    {
+      "file": "glide.gif",
+      "source": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/dfc03961bdb4d26898838cb72c9c2ac09699b1e2/dsh-pet/assets/webm/%E5%8E%9F%E5%9C%B0%E6%BC%82%E6%B5%AE%E8%B8%8F%E6%AD%A5.webm",
+      "source_sha256": "7dee1c14672f1f99bebe5e6f1a52d6664b851ed95f9958ac6c12b753a5e5cc81",
+      "sha256": "a9b38925dd633356d562fc182942c00750b16d3bd821c0ce6b843d7eec8b1a61",
+      "conversion": "VP9 alpha to 640x360 12fps GIF"
+    },
+    {
+      "file": "sidewalk.gif",
+      "source": "https://raw.githubusercontent.com/PC2005-cloud/dsh-pet/dfc03961bdb4d26898838cb72c9c2ac09699b1e2/dsh-pet/assets/webm/%E8%9E%83%E8%9F%B9%E8%B5%B0%E8%B7%AF.webm",
+      "source_sha256": "5696b0878be38cc450d6eaace837aef1c1b5834f1382bc6c11c2de582f284673",
+      "sha256": "ca171f7b79da25b751c77b1e99c74c04c8a5c6a6f9df1db8cb47925c3cb76cda",
+      "conversion": "VP9 alpha to 640x360 12fps GIF"
+    }
+  ]
+}

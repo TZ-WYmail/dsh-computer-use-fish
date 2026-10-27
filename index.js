@@ -35,6 +35,8 @@ import {
 } from './lib/actions.js'
 import { guard } from './lib/guard.js'
 import { cuaCall, CUA_SESSION } from './lib/cua.js'
+import { createCompanion, presentationTarget } from './lib/companion.js'
+import { getSnapshot } from './lib/snapshot.js'
 
 export const name = 'dsh-computer-use'
 
@@ -43,6 +45,9 @@ export const inject = ['tools', 'approval']
 /** 插件配置。 */
 export const Config = z.object({
   /** 观察快照的有效期（毫秒）。 */
+  companionEnabled: z.boolean().default(false),
+  companionSize: z.number().min(200).max(420).default(300),
+  companionReducedMotion: z.boolean().default(false),
   ttlMs: z.number().default(30000),
   /** screen_observe 最多返回多少编号元素。 */
   maxElements: z.number().default(500),
@@ -66,6 +71,7 @@ const OUT = (extra = {}) => ({
     properties: {
       ok: { type: 'boolean', required: true },
       result: { type: 'string', required: true },
+      status: { type: 'string', enum: ['confirmed', 'pending', 'completed', 'failed'] },
       ...extra,
     },
   },
@@ -141,15 +147,60 @@ export function apply(ctx, config) {
       .catch(() => undefined)
   }
 
-  /** 统一包装：先过安全护栏，再执行实现（exec 透传给需要 route 的实现）。 */
-  const wrap = (toolName, impl) => async (args, exec) => {
-    try {
-      const g = await guard(ctx, cfg, toolName, args, exec)
-      if (!g.ok) return { ok: false, result: `✗ ${g.reason}` }
-      return await impl(args, cfg, exec)
-    } catch (err) {
-      return { ok: false, result: `✗ ${err.message}` }
+  const companion = createCompanion({ enabled: config.companionEnabled, size: config.companionSize, reducedMotion: config.companionReducedMotion, diagnosticsPath: process.env.DSH_FISH_DIAGNOSTICS || null })
+  if (config.companionEnabled) {
+    cuaCall('get_screen_size', {}).then(value => companion.setDisplay(value)).catch(() => {})
+    const cleanup = () => companion.close()
+    process.once('exit', cleanup)
+    ctx.on?.('dispose', () => { process.off('exit', cleanup); cleanup() })
+  }
+  let queue = Promise.resolve(), nextAction = 0, snapshotOwner = null
+  const inputTools = new Set(['computer_click', 'computer_double_click', 'computer_right_click', 'computer_type', 'computer_key', 'computer_scroll', 'computer_drag'])
+  const wrap = (toolName, impl) => (args, exec = {}) => {
+    const run = async () => {
+      const actionId = `${process.pid}-${++nextAction}`
+      const owner = exec.agent?.session?.id ?? exec.agent?.id ?? null
+      let phase
+      const publish = state => {
+        if (state === phase) return
+        phase = state
+        const target = toolName === 'app_launch' || (toolName === 'screen_observe' && state === 'executing')
+          ? null : presentationTarget(args)
+        companion.publish({ state, tool: toolName, actionId, target })
+      }
+      const approval = { request: async request => {
+        publish('approval')
+        const result = await ctx.approval.request(request)
+        if (result === 'allowed-once') publish('executing')
+        return result
+      } }
+      try {
+        if (exec.signal?.aborted) { publish('cancelled'); return { ok: false, result: '操作已取消。' } }
+        if (inputTools.has(toolName) && snapshotOwner !== null && owner !== snapshotOwner) {
+          throw new Error('该观察快照属于其他会话；请先重新观察目标窗口。')
+        }
+        const g = await guard({ approval }, cfg, toolName, args, exec)
+        if (!g.ok) { publish('failed'); return { ok: false, result: `✗ ${g.reason}` } }
+        publish('executing')
+        const presentInput = ['computer_click', 'computer_double_click', 'computer_right_click', 'computer_scroll', 'computer_drag'].includes(toolName) && config.companionEnabled
+          ? invoke => companion.perform({ actionId, tool: toolName, target: presentationTarget(args), count: args.count, durationMs: args.duration_ms, direction: args.direction }, invoke, exec.signal) : undefined
+        const execute = () => impl(args, cfg, { ...exec, agent: exec.agent, signal: exec.signal, approval, toolName, onState: publish, presentInput })
+        const result = ['screen_observe', 'screen_zoom'].includes(toolName)
+          ? await companion.withHidden(execute) : await execute()
+        if (toolName === 'screen_observe' && result.ok) snapshotOwner = owner
+        if (exec.signal?.aborted) publish('cancelled')
+        else publish(!result.ok ? 'failed' : result.status || (inputTools.has(toolName) ? 'pending' : 'completed'))
+        return result
+      } catch (err) {
+        publish(exec.signal?.aborted ? 'cancelled' : 'failed')
+        return { ok: false, result: `✗ ${err.message}` }
+      }
     }
+    // One desktop operation at a time, including approvals. Other sessions may not
+    // replace a snapshot while a foreground retry is waiting for a human decision.
+    const result = queue.then(run, run)
+    queue = result.catch(() => {})
+    return result
   }
 
   ctx.tools.register(defineTool({
@@ -226,10 +277,10 @@ export function apply(ctx, config) {
 
   ctx.tools.register(defineTool({
     name: 'computer_click',
-    description: '点击：传入 screen_observe 输出的元素编号（element），或窗口截图像素坐标（x,y）。点击的是 cua-driver 的虚拟光标，不抢真实鼠标。',
+    description: '点击：传入 screen_observe 输出的元素编号（element），或窗口截图像素坐标（x,y）。优先后台输入；若后台明确拒绝，经本次审批后可前台重试，可能改变焦点。',
     parameters: { ...TARGET_PARAMS, count: { type: 'integer', description: '可选：点击次数，默认 1。' } },
     output: OUT(),
-    execute: wrap('computer_click', (args, cfg2) => click(args, cfg2)),
+    execute: wrap('computer_click', (args, cfg2, exec) => click(args, cfg2, exec)),
   }))
 
   ctx.tools.register(defineTool({
@@ -237,7 +288,7 @@ export function apply(ctx, config) {
     description: '双击：element 编号 或 x/y 坐标。',
     parameters: TARGET_PARAMS,
     output: OUT(),
-    execute: wrap('computer_double_click', (args, cfg2) => doubleClick(args, cfg2)),
+    execute: wrap('computer_double_click', (args, cfg2, exec) => doubleClick(args, cfg2, exec)),
   }))
 
   ctx.tools.register(defineTool({
@@ -245,7 +296,7 @@ export function apply(ctx, config) {
     description: '右键点击：element 编号 或 x/y 坐标。',
     parameters: TARGET_PARAMS,
     output: OUT(),
-    execute: wrap('computer_right_click', (args, cfg2) => rightClick(args, cfg2)),
+    execute: wrap('computer_right_click', (args, cfg2, exec) => rightClick(args, cfg2, exec)),
   }))
 
   ctx.tools.register(defineTool({
@@ -256,11 +307,7 @@ export function apply(ctx, config) {
       element: TARGET_PARAMS.element,
     },
     output: OUT(),
-    execute: wrap('computer_type', (args, cfg2, exec) => typeText(args, cfg2, {
-      approval: ctx.approval,
-      agent: exec?.agent,
-      signal: exec?.signal,
-    })),
+    execute: wrap('computer_type', (args, cfg2, exec) => typeText(args, cfg2, exec)),
   }))
 
   ctx.tools.register(defineTool({
@@ -270,11 +317,7 @@ export function apply(ctx, config) {
       key: { type: 'string', required: true, description: '按键名或组合（示例: return / cmd+c / shift+tab / cmd+shift+p）。' },
     },
     output: OUT(),
-    execute: wrap('computer_key', (args, cfg2, exec) => key(args, cfg2, {
-      approval: ctx.approval,
-      agent: exec?.agent,
-      signal: exec?.signal,
-    })),
+    execute: wrap('computer_key', (args, cfg2, exec) => key(args, cfg2, exec)),
   }))
 
   ctx.tools.register(defineTool({
@@ -283,10 +326,12 @@ export function apply(ctx, config) {
     parameters: {
       direction: { type: 'string', enum: ['up', 'down', 'left', 'right'], description: '滚动方向，默认 down。' },
       amount: { type: 'integer', description: '可选：滚动格数，默认 3。' },
+      x: TARGET_PARAMS.x,
+      y: TARGET_PARAMS.y,
       element: TARGET_PARAMS.element,
     },
     output: OUT(),
-    execute: wrap('computer_scroll', (args, cfg2) => scroll(args, cfg2)),
+    execute: wrap('computer_scroll', (args, cfg2, exec) => scroll(args, cfg2, exec)),
   }))
 
   ctx.tools.register(defineTool({
@@ -300,7 +345,7 @@ export function apply(ctx, config) {
       duration_ms: { type: 'integer', description: '可选：拖拽耗时毫秒，默认 500。' },
     },
     output: OUT(),
-    execute: wrap('computer_drag', (args, cfg2) => drag(args, cfg2)),
+    execute: wrap('computer_drag', (args, cfg2, exec) => drag(args, cfg2, exec)),
   }))
 
   ctx.tools.register(defineTool({

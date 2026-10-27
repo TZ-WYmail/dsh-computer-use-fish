@@ -110,7 +110,7 @@ test('retries a driver-declared background failure once in the foreground', asyn
     call: async (tool, payload) => {
       calls.push({ tool, payload })
       if (calls.length === 1) {
-        return { effect: 'suspected_noop', code: 'background_unavailable', escalation: { recommended: 'foreground' } }
+        return { effect: 'refused', code: 'background_unavailable', escalation: { recommended: 'foreground' } }
       }
       return { status: 'delivered' }
     },
@@ -127,7 +127,7 @@ test('does not retry in the foreground when approval is unavailable', async () =
     resolve: target,
     call: async () => {
       calls += 1
-      return { effect: 'suspected_noop', code: 'background_unavailable' }
+      return { effect: 'refused', code: 'background_unavailable' }
     },
   })
   assert.equal(calls, 1)
@@ -151,7 +151,7 @@ test('does not foreground-retry after the tool execution is cancelled', async ()
     } },
     call: async () => {
       calls += 1
-      return { effect: 'suspected_noop', code: 'background_unavailable' }
+      return { effect: 'refused', code: 'background_unavailable' }
     },
   })
   assert.equal(approvalSignal, controller.signal)
@@ -170,7 +170,7 @@ test('does not report success if the foreground retry is still a suspected no-op
     call: async () => {
       calls += 1
       return calls === 1
-        ? { effect: 'suspected_noop', code: 'background_unavailable', escalation: { recommended: 'foreground' } }
+        ? { effect: 'refused', code: 'background_unavailable', escalation: { recommended: 'foreground' } }
         : { effect: 'suspected_noop', code: 'foreground_unavailable', reason: 'target not active' }
     },
   })

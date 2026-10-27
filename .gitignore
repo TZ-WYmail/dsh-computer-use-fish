@@ -13,3 +13,6 @@ node_modules
 # 系统
 .DS_Store
 dsh-computer-use.md
+
+__pycache__/
+*.pyc

@@ -31,6 +31,9 @@ jobs:
       - name: Unit tests
         run: npm test
 
+      - name: Companion model and asset tests
+        run: python3 -m unittest discover -s companion -p 'test_*.py'
+
       - name: Package checks
         run: npm run check
 

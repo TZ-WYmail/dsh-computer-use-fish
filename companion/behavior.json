@@ -1,0 +1,460 @@
+{
+  "idle": {
+    "clips": [
+      "idle",
+      "rice",
+      "stretch"
+    ],
+    "copy": [
+      "吃口白饭，等你喊我。",
+      "今天也要认真干活。",
+      "尾巴歇一会儿～"
+    ]
+  },
+  "approval": {
+    "clips": [
+      "wait",
+      "pout",
+      "think"
+    ],
+    "copy": [
+      "要借一下前台，等你批准。",
+      "先停手，等你说可以。",
+      "这一步要换到前台，可以吗？"
+    ]
+  },
+  "pending": {
+    "clips": [
+      "look",
+      "think",
+      "organize"
+    ],
+    "copy": [
+      "已经操作，还要确认一下。",
+      "先看看结果，别急着庆祝。",
+      "等我核对这一步。"
+    ]
+  },
+  "confirmed": {
+    "clips": [
+      "happy",
+      "spin",
+      "rice"
+    ],
+    "copy": [
+      "确认好啦！奖励一口白饭。",
+      "这一步稳稳完成！",
+      "鱼鱼验收通过～"
+    ]
+  },
+  "failed": {
+    "clips": [
+      "error",
+      "pout",
+      "ponder"
+    ],
+    "copy": [
+      "这一步没完成，先停手。",
+      "碰到问题啦，回去看看提示。",
+      "鱼鱼卡住了，不重复乱点。"
+    ]
+  },
+  "cancelled": {
+    "clips": [
+      "bow",
+      "wait",
+      "idle"
+    ],
+    "copy": [
+      "收到，已经停手。",
+      "好，先不做这一步。",
+      "这次先收工。"
+    ]
+  },
+  "completed": {
+    "clips": [
+      "organize",
+      "look",
+      "bow"
+    ],
+    "copy": [
+      "查看完啦。",
+      "信息拿到了。",
+      "这一段等好了。"
+    ]
+  },
+  "tools": {
+    "screen_observe": {
+      "clips": [
+        "pose:binocular",
+        "spin",
+        "look"
+      ],
+      "copy": [
+        "我先瞅瞅这个窗口。",
+        "目标在哪里呢？",
+        "认真看一眼～"
+      ],
+      "variants": [
+        "踮脚望远镜",
+        "左右转身寻找",
+        "歪头认真查看"
+      ]
+    },
+    "screen_zoom": {
+      "clips": [
+        "pose:magnify",
+        "ponder",
+        "look"
+      ],
+      "copy": [
+        "这里再看仔细一点。",
+        "凑近看看小细节。",
+        "把这块放大看。"
+      ],
+      "variants": [
+        "举放大镜细看",
+        "蹲低仔细看",
+        "凑近睁大眼"
+      ]
+    },
+    "computer_click": {
+      "clips": [
+        "tap",
+        "pose:turn-slap",
+        "pose:tap-left"
+      ],
+      "copy": [
+        "跳起来，拍这里！",
+        "轻轻按一下～",
+        "凑近点一下。"
+      ],
+      "variants": [
+        "跳起拍下",
+        "转身侧拍",
+        "冲近双手按"
+      ]
+    },
+    "computer_double_click": {
+      "clips": [
+        "pose:tap-left",
+        "tap",
+        "pose:turn-slap"
+      ],
+      "copy": [
+        "点点，两下。",
+        "双鳍连拍！",
+        "准备双击这里。"
+      ],
+      "variants": [
+        "左右手各拍一下",
+        "跳落连续两拍",
+        "转身快速连按"
+      ]
+    },
+    "computer_right_click": {
+      "clips": [
+        "pose:binocular",
+        "pose:turn-slap",
+        "tap"
+      ],
+      "copy": [
+        "看看这里的菜单。",
+        "右边这一下～",
+        "把菜单请出来。"
+      ],
+      "variants": [
+        "轻敲探头看菜单",
+        "侧身点后歪头看",
+        "蹲下戳一下"
+      ]
+    },
+    "computer_type": {
+      "clips": [
+        "code",
+        "work",
+        "record"
+      ],
+      "copy": [
+        "小鱼鳍打字中。",
+        "正在填文字。",
+        "认真敲键盘～"
+      ],
+      "variants": [
+        "双手快速敲字",
+        "认真伏案输入",
+        "拿小本边想边写"
+      ]
+    },
+    "computer_key": {
+      "clips": [
+        "tap",
+        "code",
+        "happy"
+      ],
+      "copy": [
+        "按一下快捷键。",
+        "键盘操作中。",
+        "鱼鳍准备按键～"
+      ],
+      "variants": [
+        "利落敲一下",
+        "双手按组合键",
+        "小跳按下"
+      ]
+    },
+    "computer_scroll": {
+      "clips": [
+        "pose:swim",
+        "pose:push",
+        "tail"
+      ],
+      "copy": [
+        "划划水，翻翻页。",
+        "滚动看看后面。",
+        "页面慢慢挪～"
+      ],
+      "variants": [
+        "划水翻页",
+        "全身推页",
+        "鱼尾带着页面走"
+      ]
+    },
+    "computer_drag": {
+      "clips": [
+        "pose:carry",
+        "pose:push",
+        "tail"
+      ],
+      "copy": [
+        "抱住，慢慢拖过去。",
+        "鱼尾拉一把。",
+        "正在挪动目标。"
+      ],
+      "variants": [
+        "双手抱住倒退搬",
+        "侧身肩膀推",
+        "鱼尾勾住拉"
+      ]
+    },
+    "computer_wait": {
+      "clips": [
+        "idle",
+        "rice",
+        "sleep"
+      ],
+      "copy": [
+        "摇摇尾巴，等一会儿。",
+        "等它加载好。",
+        "这一步先等等。"
+      ],
+      "variants": [
+        "坐着摇尾等",
+        "抱饭碗等候",
+        "久等趴下睡"
+      ]
+    },
+    "app_list": {
+      "clips": [
+        "spin",
+        "pose:binocular",
+        "record"
+      ],
+      "copy": [
+        "找找打开的应用。",
+        "数数窗口小卡片。",
+        "看看谁在运行。"
+      ],
+      "variants": [
+        "转身找应用",
+        "举望远镜寻找",
+        "清点小本子"
+      ]
+    },
+    "app_launch": {
+      "clips": [
+        "tap",
+        "wave",
+        "happy"
+      ],
+      "copy": [
+        "去把应用请出来。",
+        "准备打开应用。",
+        "叩叩门，启动啦。"
+      ],
+      "variants": [
+        "敲门探头",
+        "转身招手迎接",
+        "开心迎接新窗口"
+      ]
+    }
+  },
+  "gestures": {
+    "computer_click": [
+      {
+        "name": "跳起拍下",
+        "clip": "tap",
+        "windup": 0.8,
+        "lean": 0.05,
+        "press": 0.1,
+        "kind": "jump_slap",
+        "jumpHeight": 84,
+        "crouchSeconds": 0.16,
+        "flightSeconds": 0.64
+      },
+      {
+        "name": "转身侧拍",
+        "clip": "spin",
+        "kind": "turn_slap",
+        "pose": "turn-slap",
+        "windup": 0.48,
+        "lean": 0.02,
+        "press": 0.06,
+        "copy": "转身，拍这里！"
+      },
+      {
+        "name": "冲近双手按",
+        "clip": "tap",
+        "kind": "rush_tap",
+        "pose": "tap-left",
+        "windup": 0.23,
+        "lean": 0.12,
+        "press": 0.06,
+        "copy": "冲过来，按一下！"
+      }
+    ],
+    "computer_double_click": [
+      {
+        "name": "左右手各拍一下",
+        "kind": "alternate_double",
+        "clip": "tap",
+        "pose": "tap-left",
+        "windup": 0.24,
+        "lean": 0.03,
+        "press": 0.04,
+        "copy": "左一下，右一下！"
+      },
+      {
+        "name": "跳落连续两拍",
+        "kind": "jump_double",
+        "clip": "tap",
+        "windup": 0.8,
+        "jumpHeight": 70,
+        "lean": 0.03,
+        "press": 0.08,
+        "copy": "落地，连拍两下！"
+      },
+      {
+        "name": "转身快速连按",
+        "kind": "turn_double",
+        "clip": "spin",
+        "pose": "turn-slap",
+        "windup": 0.48,
+        "lean": 0.03,
+        "press": 0.05,
+        "copy": "转过身，点点！"
+      }
+    ],
+    "computer_right_click": [
+      {
+        "name": "轻敲探头看菜单",
+        "kind": "peek_menu",
+        "clip": "tap",
+        "pose": "tap-left",
+        "windup": 0.2,
+        "press": 0.03,
+        "copy": "菜单打开了吗？"
+      },
+      {
+        "name": "侧身点后歪头看",
+        "kind": "turn_slap",
+        "pose": "turn-slap",
+        "clip": "spin",
+        "windup": 0.4,
+        "lean": 0.06,
+        "press": 0.04
+      },
+      {
+        "name": "蹲下戳一下",
+        "kind": "crouch_tap",
+        "clip": "tap",
+        "windup": 0.3,
+        "lean": 0.04,
+        "press": 0.12,
+        "copy": "蹲下来，轻戳一下。"
+      }
+    ],
+    "computer_scroll": [
+      {
+        "name": "划水翻页",
+        "kind": "swim_scroll",
+        "pose": "swim",
+        "clip": "glide",
+        "windup": 0.24,
+        "lean": 0.02,
+        "press": 0.03,
+        "copy": "划划水，翻翻页～"
+      },
+      {
+        "name": "全身推页",
+        "kind": "page_push",
+        "pose": "push",
+        "clip": "work",
+        "windup": 0.28,
+        "lean": 0.12,
+        "press": 0.07,
+        "copy": "用力把页面推过去！"
+      },
+      {
+        "name": "鱼尾带着页面走",
+        "kind": "tail_scroll",
+        "pose": "tail",
+        "clip": "tail",
+        "windup": 0.25,
+        "lean": -0.1,
+        "press": 0.04,
+        "copy": "鱼尾一摆，翻过去。",
+        "anchor": [
+          440,
+          265
+        ]
+      }
+    ],
+    "computer_drag": [
+      {
+        "name": "双手抱住倒退搬",
+        "kind": "carry_drag",
+        "pose": "carry",
+        "clip": "drag",
+        "windup": 0.22,
+        "lean": 0.02,
+        "press": 0.02,
+        "copy": "抱住啦，慢慢搬。"
+      },
+      {
+        "name": "侧身肩膀推",
+        "kind": "shoulder_push",
+        "pose": "push",
+        "clip": "work",
+        "windup": 0.3,
+        "lean": 0.12,
+        "press": 0.06,
+        "copy": "嘿咻——往这边推！"
+      },
+      {
+        "name": "鱼尾勾住拉",
+        "kind": "tail_pull",
+        "pose": "tail",
+        "clip": "tail",
+        "windup": 0.27,
+        "lean": -0.12,
+        "press": 0.03,
+        "copy": "鱼尾拉着走～",
+        "anchor": [
+          440,
+          265
+        ]
+      }
+    ]
+  }
+}

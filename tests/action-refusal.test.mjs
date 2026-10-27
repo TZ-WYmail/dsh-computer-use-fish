@@ -37,7 +37,7 @@ for (const [name, action, args, tool, label] of [
       },
     })
     assert.equal(result.ok, true)
-    assert.match(result.result, new RegExp(`${label}完成`))
+    assert.match(result.result, new RegExp(`${label}已发送`))
   })
 }
 
@@ -54,7 +54,7 @@ test('computer_type retries a driver-declared background failure in the foregrou
     call: async (tool, payload) => {
       calls.push({ tool, payload })
       if (calls.length === 1) {
-        return { effect: 'suspected_noop', code: 'background_unavailable', escalation: { recommended: 'foreground' } }
+        return { effect: 'refused', code: 'background_unavailable', escalation: { recommended: 'foreground' } }
       }
       return { status: 'delivered' }
     },
@@ -72,7 +72,7 @@ test('computer_type does not retry in the foreground when the user denies approv
     approval: { request: async () => 'denied' },
     call: async (tool, payload) => {
       calls.push({ tool, payload })
-      return { effect: 'suspected_noop', code: 'background_unavailable' }
+      return { effect: 'refused', code: 'background_unavailable' }
     },
   })
   assert.equal(calls.length, 1)

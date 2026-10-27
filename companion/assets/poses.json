@@ -1,0 +1,146 @@
+{
+  "carry": {
+    "file": "pose-carry.png",
+    "bbox": [
+      524,
+      81,
+      1302,
+      852
+    ],
+    "anchor": [
+      696,
+      546
+    ],
+    "bodyHeight": 270,
+    "sha256": "fec841a32fb801a4b24bc7c69305a3aaaff985d5aa0a559823fc8722305e37f2",
+    "method": "OpenAI built-in image_gen, design reference tap-ready.png",
+    "prompt": "Use case: stylized-concept. Asset type: transparent full-body desktop character animation key pose. Image 1 is the strict character design and rendering reference, not an edit target. Create ONE complete character matching her exact blue-haired chibi whale maid identity: same face, long navy-blue hair, white maid headband, navy/white frilly maid dress, small whale apron emblem, whale tail, tiny black shoes; same detailed soft anime-shaded illustration, same proportions, no redesign. Required new pose: She is crouching slightly and hugging an imaginary small app icon with BOTH hands at chest height, arms visibly bent and attached to torso, stepping backward carefully to carry it. Do not draw an icon or box: leave a small empty space between her bent arms. Determined cute face, body turned three-quarter left, knees visibly bent. Composition: isolated single full-body character centered in a landscape canvas, whole hair, hands, feet and tail inside frame with generous transparent margin; roughly 65% canvas height. Character only, actual transparent background. Do not draw a floor, text, shadow, UI, border, extra hands, separate limbs, detached gloves, connectors or elongated arms. Both hands must visibly join her own natural arms. Keep clothing modest and the cute mischievous personality. This is a new key pose for the same existing character, not a generic replacement mascot.",
+    "reference": "tap-ready.png"
+  },
+  "push": {
+    "file": "pose-push.png",
+    "bbox": [
+      484,
+      125,
+      1258,
+      845
+    ],
+    "anchor": [
+      600,
+      552
+    ],
+    "bodyHeight": 270,
+    "sha256": "563fc3c9c5f5836a84d0c2628ba3c5e92f33a8528b6a6cf85295299c8d595176",
+    "method": "OpenAI built-in image_gen, design reference tap-ready.png",
+    "prompt": "Use case: stylized-concept. Asset type: transparent full-body desktop character animation key pose. Image 1 is the strict character design and rendering reference, not an edit target. Create ONE complete character matching her exact blue-haired chibi whale maid identity: same face, long navy-blue hair, white maid headband, navy/white frilly maid dress, small whale apron emblem, whale tail, tiny black shoes; same detailed soft anime-shaded illustration, same proportions, no redesign. Required new pose: She is pushing something heavy with her left shoulder and both hands tucked close to the same shoulder, her entire body leaning 30 degrees toward the LEFT, feet braced apart, legs visibly bent. No pushed object is drawn. Her shoulder is the leading contact, arms remain natural-length attached to her torso. Cute concentrated effort expression. Composition: isolated single full-body character centered in a landscape canvas, whole hair, hands, feet and tail inside frame with generous transparent margin; roughly 65% canvas height. Character only, actual transparent background. Do not draw a floor, text, shadow, UI, border, extra hands, separate limbs, detached gloves, connectors or elongated arms. Both hands must visibly join her own natural arms. Keep clothing modest and the cute mischievous personality. This is a new key pose for the same existing character, not a generic replacement mascot.",
+    "reference": "tap-ready.png"
+  },
+  "swim": {
+    "file": "pose-swim.png",
+    "bbox": [
+      336,
+      127,
+      1517,
+      837
+    ],
+    "anchor": [
+      383,
+      587
+    ],
+    "bodyHeight": 270,
+    "sha256": "186c99d493c52b64252b63ffd55a8cc3213085a109e707889d0c111f1f9ab2e0",
+    "method": "OpenAI built-in image_gen, design reference tap-ready.png",
+    "prompt": "Use case: stylized-concept. Asset type: transparent full-body desktop character animation key pose. Image 1 is the strict character design and rendering reference, not an edit target. Create ONE complete character matching her exact blue-haired chibi whale maid identity: same face, long navy-blue hair, white maid headband, navy/white frilly maid dress, small whale apron emblem, whale tail, tiny black shoes; same detailed soft anime-shaded illustration, same proportions, no redesign. Required new pose: She is in a playful breaststroke swimming pose oriented toward the LEFT, both arms naturally attached and sweeping outward from her chest, knees bent back and whale tail raised, dynamic horizontal full-body pose. No water or pool is drawn, only the complete girl. Cute delighted effort expression. Composition: isolated single full-body character centered in a landscape canvas, whole hair, hands, feet and tail inside frame with generous transparent margin; roughly 65% canvas height. Character only, actual transparent background. Do not draw a floor, text, shadow, UI, border, extra hands, separate limbs, detached gloves, connectors or elongated arms. Both hands must visibly join her own natural arms. Keep clothing modest and the cute mischievous personality. This is a new key pose for the same existing character, not a generic replacement mascot.",
+    "reference": "tap-ready.png"
+  },
+  "tap-left": {
+    "file": "pose-tap-left.png",
+    "bbox": [
+      531,
+      101,
+      1170,
+      850
+    ],
+    "anchor": [
+      629,
+      573
+    ],
+    "bodyHeight": 270,
+    "sha256": "51d1b074d08cd2518279373d5adda9ef387ed75e34100e483b10ac1097516e3f",
+    "method": "OpenAI built-in image_gen, design reference tap-ready.png",
+    "prompt": "Use case: stylized-concept. Asset type: a transparent full-body desktop character animation key pose. Image 1 is the strict design/style reference. Render exactly the same chibi blue-haired whale maid: blue eyes, long navy hair, white frilly maid headband, navy-and-white maid dress, whale apron emblem, whale tail, little black shoes. Preserve her specific face, proportions, palette and soft detailed anime shading. New pose: Facing mostly forward with her torso twisted slightly LEFT, she reaches only her LEFT hand forward and downward in a decisive open-palm slap. Her other hand stays tucked near her chest. The slapping palm must be clearly on the LEFT of her face. Cute determined face. One hand per arm, natural-length arms. Composition: ONE whole character centered on landscape transparent canvas, all hair, shoes, tail and hands fully inside frame, generous empty margins. No floor, background, text, labels, UI, shadow, extra characters, detached limbs, gloves on extension lines, or elongated arms. Keep modest clothing. Arms and hands must be part of the complete original character anatomy. This is one new pose for the same character.",
+    "reference": "tap-ready.png"
+  },
+  "tap-right": {
+    "file": "pose-tap-right.png",
+    "bbox": [
+      546,
+      124,
+      1206,
+      854
+    ],
+    "anchor": [
+      659,
+      575
+    ],
+    "bodyHeight": 270,
+    "sha256": "6e1c904f5ba33a7fb44a668eeb41f28f3fe3d73b905390fb42aadf419911c2f7",
+    "method": "OpenAI built-in image_gen, design reference tap-ready.png",
+    "prompt": "Use case: stylized-concept. Asset type: a transparent full-body desktop character animation key pose. Image 1 is the strict design/style reference. Render exactly the same chibi blue-haired whale maid: blue eyes, long navy hair, white frilly maid headband, navy-and-white maid dress, whale apron emblem, whale tail, little black shoes. Preserve her specific face, proportions, palette and soft detailed anime shading. New pose: Facing mostly forward with her torso twisted slightly RIGHT, she reaches only her RIGHT hand forward and downward in a decisive open-palm slap. Her other hand stays tucked near her chest. The slapping palm must be clearly on the RIGHT of her face. Cute determined face. One hand per arm, natural-length arms. Composition: ONE whole character centered on landscape transparent canvas, all hair, shoes, tail and hands fully inside frame, generous empty margins. No floor, background, text, labels, UI, shadow, extra characters, detached limbs, gloves on extension lines, or elongated arms. Keep modest clothing. Arms and hands must be part of the complete original character anatomy. This is one new pose for the same character.",
+    "reference": "tap-ready.png"
+  },
+  "turn-slap": {
+    "file": "pose-turn-slap.png",
+    "bbox": [
+      495,
+      87,
+      1249,
+      867
+    ],
+    "anchor": [
+      548,
+      465
+    ],
+    "bodyHeight": 270,
+    "sha256": "18a756c9abdf80a2ad12092f156fd0906b295db3b8e79f14ded1ad567c3775c1",
+    "method": "OpenAI built-in image_gen, design reference tap-ready.png",
+    "prompt": "Use case: stylized-concept. Asset type: a transparent full-body desktop character animation key pose. Image 1 is the strict design/style reference. Render exactly the same chibi blue-haired whale maid: blue eyes, long navy hair, white frilly maid headband, navy-and-white maid dress, whale apron emblem, whale tail, little black shoes. Preserve her specific face, proportions, palette and soft detailed anime shading. New pose: Her whole body is in a three-quarter SIDE VIEW facing LEFT, feet planted in a twisting step with skirt and whale tail swinging to the right, one of her own open palms raised beside her shoulder ready to slap toward the LEFT. This should be visibly a turn-and-slap body pose, not the front-facing fist pose of the reference. Cute mischievous smile, natural short arms attached to shoulders. Composition: ONE whole character centered on landscape transparent canvas, all hair, shoes, tail and hands fully inside frame, generous empty margins. No floor, background, text, labels, UI, shadow, extra characters, detached limbs, gloves on extension lines, or elongated arms. Keep modest clothing. Arms and hands must be part of the complete original character anatomy. This is one new pose for the same character.",
+    "reference": "tap-ready.png"
+  },
+  "binocular": {
+    "file": "pose-binocular.png",
+    "bbox": [
+      562,
+      130,
+      1157,
+      852
+    ],
+    "anchor": [
+      700,
+      476
+    ],
+    "bodyHeight": 270,
+    "sha256": "0715f989b25219ad08ec0dfb93e205392807d14ec2f412bf98fb5f9c91db9181",
+    "method": "OpenAI built-in image_gen, design reference tap-ready.png",
+    "prompt": "Use case: stylized-concept. Asset type: a transparent full-body desktop character animation key pose. Image 1 is the strict design/style reference. Render exactly the same chibi blue-haired whale maid: blue eyes, long navy hair, white frilly maid headband, navy-and-white maid dress, whale apron emblem, whale tail, little black shoes. Preserve her specific face, proportions, palette and soft detailed anime shading. New pose: She is standing on tiptoe, holding a small dark-blue pair of binoculars to her eyes with BOTH attached hands, leaning forward inquisitively, whale tail lifted for balance. The complete binoculars rest naturally between both hands. Full body, cute curious pose. Composition: ONE whole character centered on landscape transparent canvas, all hair, shoes, tail and hands fully inside frame, generous empty margins. No floor, background, text, labels, UI, shadow, extra characters, detached limbs, gloves on extension lines, or elongated arms. Keep modest clothing. Arms and hands must be part of the complete original character anatomy. This is one new pose for the same character.",
+    "reference": "tap-ready.png"
+  },
+  "magnify": {
+    "file": "pose-magnify.png",
+    "bbox": [
+      483,
+      104,
+      1248,
+      855
+    ],
+    "anchor": [
+      644,
+      514
+    ],
+    "bodyHeight": 270,
+    "sha256": "f9cc168bacbe8c21824d9da0c146f3f34dc1c6653837dba98166863729f2d3e3",
+    "method": "OpenAI built-in image_gen, design reference tap-ready.png",
+    "prompt": "Use case: stylized-concept. Asset type: a transparent full-body desktop character animation key pose. Image 1 is the strict design/style reference. Render exactly the same chibi blue-haired whale maid: blue eyes, long navy hair, white frilly maid headband, navy-and-white maid dress, whale apron emblem, whale tail, little black shoes. Preserve her specific face, proportions, palette and soft detailed anime shading. New pose: She is crouching low on bent knees, holding a small round magnifying glass in one hand directly before her wide curious eye, with her other hand braced on her own knee. Hair and whale tail visible. Full body, clearly looking closely through the lens. Composition: ONE whole character centered on landscape transparent canvas, all hair, shoes, tail and hands fully inside frame, generous empty margins. No floor, background, text, labels, UI, shadow, extra characters, detached limbs, gloves on extension lines, or elongated arms. Keep modest clothing. Arms and hands must be part of the complete original character anatomy. This is one new pose for the same character.",
+    "reference": "tap-ready.png"
+  }
+}
