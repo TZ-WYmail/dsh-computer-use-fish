@@ -8,9 +8,9 @@
 
 ## 远程与发布
 
-`upstream` 只记录原版项目地址，不是本项目的发布地址。没有配置 `origin`；确定自己的远程仓库后再添加。发布目标不得指向上游作者的仓库。
+本项目的 `origin` 为 <https://github.com/TZ-WYmail/dsh-computer-use-fish>，主分支 `main` 已推送到该仓库。`upstream` 只记录原版项目地址，不是本项目的发布地址，其推送地址已禁用；发布目标不得指向上游作者的仓库。
 
-`package.json` 暂设 `private: true`，并移除指向上游的 repository 字段，避免把独立维护版误发到原 npm 包。尚未决定远程地址及包名时不发布 npm。仓库名称与 Harness 插件标识可不同；目前保留 `dsh-computer-use` 标识以兼容已安装配置。
+`package.json` 设置 `private: true`，`repository` 指向本项目的 GitHub 地址，避免把独立维护版误发到原 npm 包。本项目尚未发布 npm 包。仓库名称与 Harness 插件标识可不同；目前保留 `dsh-computer-use` 标识以兼容已安装配置。
 
 代码继续 MIT；角色素材许可单列于根目录 THIRD_PARTY.md。当前版本维持 `0.3.2-fish.6`，本次迁移没有功能更新，不重编号。
 

@@ -18,4 +18,6 @@
 
 透明 WebM 转换所得 GIF 的源文件与派生哈希见 `companion/assets/sources.json`；AI 辅助衍生完整角色姿势的提示词、参考图及哈希见 `companion/assets/poses.json`。AI 辅助衍生不取消原角色的许可要求；这些角色资源不包含在根目录的 MIT 代码授权内。
 
+`docs/media/` 下的预览 GIF 由本项目隔离场景渲染脚本生成，不是真实桌面操作录像；其中出现的角色素材同样适用上述署名、非商业与相同方式共享要求。
+
 本仓库使用素材并参考实现，没有把完整 dsh-pet 作为第二个 DSH 插件安装。cua-driver 与 Harness 是外部运行依赖，未在此仓库合并源码。

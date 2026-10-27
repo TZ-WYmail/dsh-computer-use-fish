@@ -1,5 +1,7 @@
 # dsh-computer-use 发布清单（PUBLISH）
 
+> **上游历史存档**：以下发布记录与命令属于原作者仓库 `988hj7tczd-oss/dsh-computer-use`，不适用于本独立维护仓库。不要据此把 `origin` 指向或推送到上游；本仓库地址见 README 与 [维护说明](docs/MAINTENANCE.md)。
+>
 > 状态更新：2026-08-15 · GitHub 发布已完成，npm 发布 + awesome 收录待做。
 
 ## ✅ 已完成：GitHub 发布（2026-08-15）

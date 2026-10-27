@@ -41,7 +41,7 @@ rm -rf "$DSH_HOME"
 
 | 信号 | 响应 |
 |---|---|
-| 规范仓库（canonical repository） | package.json `repository` → `git+https://github.com/988hj7tczd-oss/dsh-computer-use.git`（与仓库一致） |
+| 规范仓库（canonical repository） | package.json `repository` → `git+https://github.com/TZ-WYmail/dsh-computer-use-fish.git`（与独立维护仓库一致；上游来源见 THIRD_PARTY.md） |
 | Node 兼容性声明 | `engines.node >= 22.18.0` + `dsh.compatibility.node` |
 | 供应链审查 | 仅声明 `@deepseek-ai/dsh-tools` + `@deepseek-ai/schemastery` 为宿主 peer 依赖（官方生态）；无 runtime/optional 第三方依赖；开发测试版本仅在 dev 层 |
 | 文件权限信号 | 有 `spawn` 子进程（cua-driver）——真实插件核心能力；GLM fallback 仅读取用户显式指定的 key 文件，不写文件 |

@@ -5,6 +5,10 @@
   "type": "module",
   "main": "index.js",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TZ-WYmail/dsh-computer-use-fish.git"
+  },
   "keywords": [
     "dsh",
     "computer-use",
